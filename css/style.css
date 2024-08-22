@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+nav {
+	height: 60px;
+	line-height: 60;
+	background-color: #ddd;
+	text-align: center;
+}
+
+/*nav*/
+
+.wrapper {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.burger-icon {
+	padding: 0 30px;
+	margin-left: auto;
+	line-height: 60px;
+	font-size: 30px;
+	display: block;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.burger-icon:hover {
+	color: #0009bd;
+	transition: color 0.7s;
+}
+
+.nav-items {
+	display: none;
+}
+
+.nav-items a {
+	padding: 0 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #333;
+}
+
+.nav-items a:hover {
+	color: #0009bd;
+	transition: color 0.7s;
+}
+
+@media (min-width: 768px) {
+	.nav-items {
+		display: block;
+	}
+	.burger-icon {
+		display: none;
+	}
+}
