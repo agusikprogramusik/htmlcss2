@@ -8,19 +8,46 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.caucasus-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.caucasus-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	text-align: center;
+}
+
+.caucasus-text h1 {
+	margin-bottom: 5px;
+	text-shadow: 3px 3px 5px #000;
+	color: #ddd;
+}
+
+.caucasus-text span {
+	text-transform: uppercase;
+	color: #0009bd;
+}
+
+/*nav*/
+
 nav {
 	height: 60px;
 	line-height: 60px;
 	background-color: #ddd;
 	text-align: center;
-}
-
-/*nav*/
-
-.wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1200px;
 }
 
 .burger-icon {
@@ -43,13 +70,27 @@ nav {
 	display: none;
 }
 
+/*header*/
+
+.header {
+	position: relative;
+	height: 330px;
+	background-image: url("/img/caucasus-small.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+/*media queries*/
+
 @media (min-width: 768px) {
 	.burger-icon {
 		display: none;
 	}
+
 	.nav-items {
 		display: block;
 	}
+
 	.nav-items a {
 		padding: 0 30px;
 		text-decoration: none;
@@ -57,8 +98,32 @@ nav {
 		font-weight: bold;
 		color: #333;
 	}
+
 	.nav-items a:hover {
 		color: #0009bd;
 		transition: color 0.7s;
+	}
+
+	.header {
+		height: 400px;
+		background-image: url("/img/caucasus-big.jpg");
+	}
+
+	.caucasus-text h1 {
+		font-size: 36px;
+	}
+
+	.caucasus-text p {
+		font-size: 18px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.caucasus-text h1 {
+		font-size: 42px;
+	}
+
+	.caucasus-text p {
+		font-size: 20px;
 	}
 }
